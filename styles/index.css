@@ -16,8 +16,8 @@
     color: #8F503F;
     position: absolute;
     width: 300px;
-    left: 710px;
-    top: 165px;    
+    left:0 ;
+    top: -10%;  
 }
 .about-image {
     width: 600px;
@@ -30,7 +30,8 @@
 }
 .about-text {
     width: 500px;
-    margin: 26px 0px 0px 0px
+    margin: 26px 0px 0px 0px;
+    position: relative;
 }
 .about-paragraph1, .about-paragraph2 {
     color: #8B8680;
@@ -78,7 +79,8 @@
     font-size: 18px;
 }
 
-@media screen and (max-width: 1190px) {
+/* mobile responsiveness */
+@media screen and (max-width: 700px) {
     .about-hotel{
         display: flex;
         flex-direction: column;
@@ -100,14 +102,16 @@
         position: relative;
     }
     .about-paragraph1{
-        margin: 90px 0px 0px 35px;
+        margin: 90px 10px 0px 15px;
         font-size: 18px;
         line-height: 28px;
+        width: 90vw;
     }
     .about-paragraph2{
-        margin: 0px 0px 0px 35px;
+        margin: 0px 10px 0px 15px;
         font-size: 18px;
         line-height: 28px;
+        width: 90vw;
     }
     .about-h1 {
         color: #8F503F;
@@ -117,7 +121,7 @@
         top: 5%;    
     }
     .about-btn {
-        margin-left: 35px;
+        margin-left: 15px;
         margin-top: 25px;
     }
     .hospitality {
@@ -159,6 +163,91 @@
         left: 45%;
         top:70%;
         width: 30px;
+    }
+    
+}
+@media screen and (min-width: 700px) and (max-width:1024px) {
+    .about-hotel{
+        display: flex;
+        flex-direction: column;
+        margin: 35px 0px 40px 0px;
+        width: auto;
+        max-width: 100%;
+    }
+    .about-image {
+        width: auto;
+        max-width: 100%;
+    }
+    .about-img{
+        width: 100vw;
+        max-width: 100%;
+    }
+    .about-text{
+        width: auto;
+        position: relative;
+    }
+    .about-paragraph1{
+        margin: 90px 0px 0px 20px;
+        font-size: 22px;
+        line-height: 30px;
+        width: 90vw;
+    }
+    .about-paragraph2{
+        margin: 0px 0px 0px 20px;
+        font-size: 22px;
+        line-height: 30px;
+        width: 90vw;
+    }
+    .about-h1 {
+        color: #8F503F;
+        position: absolute;
+        width: 300px;
+        left: 3%;
+        top: 7%;    
+    }
+    .about-btn {
+        margin-left: 20px;
+        margin-top: 25px;
+        font-size: 18px;
+    }
+    .hospitality {
+        width: auto;
+        max-width: 100%;
+        position: relative;
+        text-align: center;
+    }
+    .hospitality-image {
+        width: auto;
+        max-width: 100%;
+    }
+    .hospitality-img {
+        width: 100%;
+        height: auto;    
+    }
+    .text > h5 {
+        font-size:18px;
+        position: absolute;
+        max-width: 100%;
+        height: 27px;
+        left:36%;
+        right: 33%;
+        top:15%;
+    }
+    .text> p {
+        position: absolute;
+        max-width: 100%;
+        height: 67px;
+        left: 25%;
+        top: 30%;
+        right: 20%;
+        font-size: 16px;
+    }
+    .hospitality-vector {
+        position: absolute;
+        left: 43%;
+        right:10% ;
+        top:53%;
+        width: 80px;
     }
     
 }
